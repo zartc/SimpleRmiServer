@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+
+<configuration debug="false" scan="true" scanPeriod="30 seconds">
+	<property name="LOG_EXCEPTION_CONVERSION_WORD" value=">%xwEx" />
+	<property name="LOG_TIME_PATTERN" value="%d{HH:mm:ss.SSS}" />
+	<property name="LOG_LEVEL_PATTERN" value="%highlight([%-5p])" />
+	<property name="LOG_CLASS_PATTERN" value="%cyan(%-60.60logger{59})" />
+	<property name="CONSOLE_LOG_PATTERN" value="${LOG_TIME_PATTERN} ${LOG_LEVEL_PATTERN} [%t] ${LOG_CLASS_PATTERN} --- %message%n" />
+	
+	<appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+    	<encoder>
+			<pattern>${CONSOLE_LOG_PATTERN}</pattern>
+			<charset>utf8</charset>
+		</encoder>
+	</appender>
+
+
+    <root level="info">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+
+</configuration>
+    
