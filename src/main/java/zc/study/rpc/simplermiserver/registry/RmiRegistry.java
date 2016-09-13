@@ -1,4 +1,4 @@
-package zc.studdy.rpc.simplermiserver.registry;
+package zc.study.rpc.simplermiserver.registry;
 
 import java.net.MalformedURLException;
 import java.rmi.Naming;

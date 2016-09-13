@@ -1,12 +1,12 @@
-package zc.studdy.rpc.simplermiserver;
+package zc.study.rpc.simplermiserver;
 
 import java.rmi.RemoteException;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import zc.studdy.rpc.simplermiserver.registry.RmiRegistry;
-import zc.studdy.rpc.simplermiserver.service.GreetingService;
+import zc.study.rpc.simplermiserver.registry.RmiRegistry;
+import zc.study.rpc.simplermiserver.service.GreetingService;
 
 
 

@@ -1,9 +1,9 @@
-package zc.studdy.rpc.simplermiserver;
+package zc.study.rpc.simplermiserver;
 
 import java.rmi.RemoteException;
 
-import zc.studdy.rpc.simplermiserver.registry.RmiRegistry;
-import zc.studdy.rpc.simplermiserver.service.GreetingServiceImpl;
+import zc.study.rpc.simplermiserver.registry.RmiRegistry;
+import zc.study.rpc.simplermiserver.service.GreetingServiceImpl;
 
 
 /**

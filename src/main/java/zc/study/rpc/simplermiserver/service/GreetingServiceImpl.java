@@ -1,4 +1,4 @@
-package zc.studdy.rpc.simplermiserver.service;
+package zc.study.rpc.simplermiserver.service;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

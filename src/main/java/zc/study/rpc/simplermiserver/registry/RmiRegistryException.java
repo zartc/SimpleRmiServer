@@ -1,4 +1,4 @@
-package zc.studdy.rpc.simplermiserver.registry;
+package zc.study.rpc.simplermiserver.registry;
 
 import org.apache.commons.lang3.exception.ContextedRuntimeException;
 import org.apache.commons.lang3.exception.ExceptionContext;
