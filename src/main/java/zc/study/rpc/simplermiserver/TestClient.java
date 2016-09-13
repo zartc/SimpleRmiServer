@@ -9,9 +9,12 @@ import zc.study.rpc.simplermiserver.registry.RmiRegistry;
 import zc.study.rpc.simplermiserver.service.GreetingService;
 
 
-
-// http://www.baeldung.com/2012/02/06/properties-with-spring/?utm_source=email-newsletter&utm_medium=email&utm_campaign=auto_7_spring
-
+/**
+ * The main client class. It lookup the greeting service in the RmiRegistry then call the
+ * service.
+ * 
+ * @author Zart Colwing
+ */
 public class TestClient {
 	private static final Logger log = LoggerFactory.getLogger(TestClient.class);
 

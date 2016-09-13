@@ -9,9 +9,9 @@ import org.slf4j.LoggerFactory;
  * <p>
  * Albeit the GreetingService extends Remote, the implementation class is not absolutely
  * "required" to declare RemoteException in their method signature. This subtelty allow
- * POJOs to serve as implementation of Remote interface.
+ * POJOs to serve as implementation of Remote interfaces.
  *
- * @author Pascal
+ * @author Zart Colwing
  */
 public class GreetingServiceImpl implements GreetingService {
 	private static final Logger log = LoggerFactory.getLogger(GreetingServiceImpl.class);

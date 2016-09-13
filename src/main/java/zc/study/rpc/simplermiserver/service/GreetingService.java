@@ -7,8 +7,13 @@ import java.rmi.RemoteException;
 /**
  * The interface of the Greeting service.
  * <p>
- * The interface extends Remote and every method must declare RemoteException in their
- * throws clause.
+ * The interface extends Remote and every method in the interface must declare
+ * RemoteException in their throws clause.
+ * <p>
+ * As you will see in the GreetingServiceImpl class, implementation classes are not
+ * obsolutely required to declare the RemoteException in their signature.
+ *
+ * @author Zart Colwing
  */
 public interface GreetingService extends Remote {
 	/**

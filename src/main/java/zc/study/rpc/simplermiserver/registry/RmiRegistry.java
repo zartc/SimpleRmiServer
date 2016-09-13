@@ -14,7 +14,11 @@ import org.slf4j.LoggerFactory;
 
 
 /**
- * The implementation of the RmiRegistry.
+ * A Helper class that offer a nice and easy interface to bind and lookup services into
+ * the Rmi Registry.
+ * <p>
+ * It also nicely handle the case where the service class is a POJO that is not derived
+ * from UnicastRemoteObject.
  *
  * @author Zart Colwing
  */
@@ -71,8 +75,8 @@ public class RmiRegistry {
 
 		try {
 			/*
-			 * if the service class does not extends UnicastRemoteObject, the server must
-			 * create a proxy for it.
+			 * if the service class does not extends UnicastRemoteObject, we must create a
+			 * proxy for it.
 			 */
 			if (!(service instanceof UnicastRemoteObject)) {
 				service = UnicastRemoteObject.exportObject(service, 0);
